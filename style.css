@@ -26,7 +26,7 @@ body {
   background-color: var(--black-clr-800);
   color: var(--white-clr-800);
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 a {
@@ -70,7 +70,6 @@ img {
   width: 75vw;
   max-width: 97%;
   margin: 0 auto;
-  
 }
 .btn {
   padding: 0.635rem 1.5rem;
@@ -93,7 +92,8 @@ img {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
- 
+  background-color: var(--black-clr-800);
+  z-index: 2000;
   align-items: center;
   height: 4.5rem;
   padding: 0.5rem 4.5rem;
@@ -121,7 +121,7 @@ img {
   ==================== */
 section.hero {
   width: 100%;
-  
+
   height: auto;
   position: relative;
   top: 4.5rem;
@@ -200,7 +200,6 @@ section.about-us::after {
   margin-top: 3rem;
 }
 .experience-card {
-  
   padding: 1rem 0;
   background-color: var(--black-clr-500);
 }
@@ -263,10 +262,10 @@ section.projects {
 /* ====================
     Contact  section  Styling
   ==================== */
-  section.contact-us{
-    position: relative;
-    top: 4rem;
-  }
+section.contact-us {
+  position: relative;
+  top: 4rem;
+}
 .contact-container {
   padding: 3rem 0rem;
   background-color: var(--black-clr-500);
@@ -330,6 +329,14 @@ section.footer-link {
   font-size: 1.1rem;
 }
 
+
+
+/* ====================
+    Responsive  Media Queries
+  ==================== */
+
+
+
 @media (max-width: 1014px) {
   .container {
     width: 90vw;
@@ -354,9 +361,10 @@ section.footer-link {
 
 @media (max-width: 856px) {
   .navbar {
-    width: 80%;
-    height: 3rem;
-    padding: 1rem;
+    width: 98%;
+    height: 4rem;
+    padding: 1.5rem;
+    margin: auto;
   }
   .brand-logo {
     width: 4rem;
@@ -374,16 +382,6 @@ section.footer-link {
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    width: 98%;
-    height: 4rem;
-    padding: 1.5rem;
-    margin: auto;
-  }
-  .brand-logo {
-    width: 4rem;
-  }
-
   .menu-icon {
     display: block;
   }
@@ -399,12 +397,12 @@ section.footer-link {
     left: 0;
     gap: 3rem;
     transform: translateX(100%);
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
-  .nav-list.open{
+  .nav-list.open {
     transform: translateX(0);
   }
-  .nav-list li a{
+  .nav-list li a {
     font-size: 1.4rem;
   }
   .nav-icon {
